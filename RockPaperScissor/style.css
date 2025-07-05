@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    background-color: #242423;
+    color: #CDDDDD;
+    height: 80px;
+    line-height: 80px;
+    /* Vertically center the text inside the header */
+}
+
+.choice {
+    height: 180px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+    border: 2px solid transparent;
+    /* 👈 Always has a border */
+    box-sizing: border-box;
+    /* 👈 Ensures padding/border doesn't increase size */
+}
+
+.choice:hover {
+    cursor: pointer;
+    border-color: #53A548;
+    /* 👈 Just change the color on hover */
+}
+
+img {
+    padding: 10px;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 5rem;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 5rem;
+    margin-top: 5rem;
+}
+
+#user-score,
+#comp-score {
+    font-size: 3rem;
+}
+
+.msg-container {
+    margin-top: 5rem;
+}
+
+#msg {
+    background-color: #242423;
+    color: #CDDDDD;
+    font-size: 2rem;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 1rem;
+}
